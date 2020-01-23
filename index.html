@@ -1,0 +1,245 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="dark fileProperties">
+    <div class="header">
+      <div class="title">
+        ☆ Changelog.txt
+      </div>
+      <div class="close-button">&times;</div>
+    </div>
+
+    <div class="tabBar">
+      <div class="tab" data-name='properties' onclick="showTab(event)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.033 16.01c.564-1.789 1.632-3.932 1.821-4.474.273-.787-.211-1.136-1.74.209l-.34-.64c1.744-1.897 5.335-2.326 4.113.613-.763 1.835-1.309 3.074-1.621 4.03-.455 1.393.694.828 1.819-.211.153.25.203.331.356.619-2.498 2.378-5.271 2.588-4.408-.146zm4.742-8.169c-.532.453-1.32.443-1.761-.022-.441-.465-.367-1.208.164-1.661.532-.453 1.32-.442 1.761.022.439.466.367 1.209-.164 1.661z"/></svg>
+        Properties
+      </div>
+      <div class="tab" data-name='rename' onclick="showTab(event)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.769 9.923l-12.642 12.639-7.127 1.438 1.438-7.128 12.641-12.64 5.69 5.691zm1.414-1.414l2.817-2.82-5.691-5.689-2.816 2.817 5.69 5.692z"/></svg>
+        Rename
+      </div>
+      <div class="tab" data-name='permissions' onclick="showTab(event)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 9.761v-4.761c0-2.761-2.238-5-5-5-2.763 0-5 2.239-5 5v4.761c-1.827 1.466-3 3.714-3 6.239 0 4.418 3.582 8 8 8s8-3.582 8-8c0-2.525-1.173-4.773-3-6.239zm-8-4.761c0-1.654 1.346-3 3-3s3 1.346 3 3v3.587c-.927-.376-1.938-.587-3-.587s-2.073.211-3 .587v-3.587zm4 11.723v2.277h-2v-2.277c-.596-.347-1-.984-1-1.723 0-1.104.896-2 2-2s2 .896 2 2c0 .738-.404 1.376-1 1.723z"/></svg>
+        Permissions
+      </div>
+      <div class="tab" data-name='colors' onclick="showTab(event)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 12c-2.435 3.599-4 5.85-4 8.037 0 2.19 1.79 3.963 4 3.963s4-1.773 4-3.963c0-2.187-1.565-4.438-4-8.037zm-.014 2.56c.234.363.514.994.514 1.66 0 1.954-2 2.274-2 1.085 0-.817.994-2.022 1.486-2.745zm-7.986 5.314v-16.874h-4c-1.604 0-2.001 1.826-2.001 3h-1.999v-6h19.999l.001 6h-1.98c0-1.174-.371-3-2.02-3h-4v11.448c-1.244 2.038-2 3.749-2 5.589 0 1.522.582 2.908 1.529 3.963h-6.529v-2h1c1.175 0 2-.952 2-2.126z"/></svg>
+        Colors
+      </div>
+      <div class="tab" data-name='styles' onclick="showTab(event)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 6v16h-20v-16h20zm2-6h-24v24h24v-24zm-16 9h-4v4h4v-4zm6 0h-4v4h4v-4zm6 0h-4v4h4v-4zm-12 6h-4v4h4v-4zm6 0h-4v4h4v-4z"/></svg>
+        Styles
+      </div>
+    </div>
+
+    <div class="content" data-view="properties">
+      <div class="preview">
+        <img src="./gutenberg.png" />
+      </div>
+      <div>
+        <div class="properties">
+          <div>Name:</div><div>Changelog.txt</div>
+          <div>Size:</div><div>12Kb</div>
+          <div>Location:</div><div>/home/darkcode/Downloads</div>
+          <div>Type:</div><div>PNG image</div>
+          <div>Size on Disk:</div><div>16Kb</div>
+          <div>Count:</div><div>1 file</div>
+          <div>MD5:</div><div>9817f3c3d6fda5c5c75a182b98480256</div>
+          <div>Modified: </div><div>2020-01-13 16:40:03 (19 days ago)</div>
+          <div>Created:</div><div>2020-01-19 19:54:32 (20 days ago)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" data-view="permissions">
+      <div class="preview">
+        <img src="./gutenberg.png" />
+      </div>
+      <div>
+        <div class="properties">
+          <div>New Owner:</div><div><input type="text" value="darkcode" /></div>
+          <div>Old Owner:</div><div>darkcode</div>
+          <div>New Group:</div><div><input type="text" value="wheel" /></div>
+          <div>Old Group:</div><div>wheel</div>
+
+          <div>Quick:</div><div>
+            <select>
+              <option>r-- --- ---</option>
+              <option>rw- --- ---</option>
+              <option>rwx --- ---</option>
+              <option>r-- r-- ---</option>
+              <option>rw- r-- ---</option>
+              <option>rw- rw- ---</option>
+              <option>rwx r-x ---</option>
+              <option>rwx rwx ---</option>
+              <option>r-- r-- r--</option>
+              <option>rw- r-- r--</option>
+              <option>rw- rw- rw-</option>
+              <option>rwx r-- r--</option>
+              <option>rwx r-x r-x</option>
+              <option>rwx rwx rwx</option>
+            </select>
+          </div>
+          <div>Owner:</div><div>
+            <span><input type="checkbox" />Read</span>
+            <span><input type="checkbox" />Write</span>
+            <span><input type="checkbox" />Execute</span>
+          </div>
+          <div>Group:</div><div>
+            <span><input type="checkbox" />Read</span>
+            <span><input type="checkbox" />Write</span>
+            <span><input type="checkbox" />Execute</span>
+          </div>
+          <div>Other:</div><div>
+            <span><input type="checkbox" />Read</span>
+            <span><input type="checkbox" />Write</span>
+            <span><input type="checkbox" />Execute</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" data-view="rename">
+      <div class="preview">
+        <img src="./gutenberg.png" />
+      </div>
+      <div>
+        <div class="properties">
+          <div>Old Name:</div>
+          <div>Changelog.txt</div>
+          <div>Function:</div>
+          <div>
+            <select>
+              <option>Title case</option>
+              <option>Lower case</option>
+              <option>Upper case</option>
+              <option>Replace _ with spaces</option>
+              <option>Replace spaces with _</option>
+              <option>Random name</option>
+              <option>Random name</option>
+              <option>MD5 as name</option>
+              <option>JS Encode</option>
+              <option>JS Decode</option>
+            </select>
+            <button type="button">Apply</button>
+          </div>
+          <div>New Name:</div><div><input type="text" value="Changelog.txt" /></div>
+          <span>&nbsp;</span>
+          <div>
+            <button type="button">Rename</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" data-view="colors">
+      <div class="preview">
+        <img src="./gutenberg.png" />
+      </div>
+      <div class="colorControlsContainer">
+        Tree
+        <div class="colorControls">
+          Background: <input type="color" value="#ff0000">Text: <input type="color" value="#ff0000">
+          <div class="textControls">
+            <div data-active="true" class="checkboxButton">Bold</div>
+            <div class="checkboxButton">Italic</div>
+            <div data-active="true" class="checkboxButton">Underlined</div>
+          </div>
+        </div>
+        Button Navigation
+        <div class="colorControls">
+          Background: <input type="color" value="#ff0000">Text: <input type="color" value="#ff0000">
+          <div class="textControls">
+            <div class="checkboxButton">Bold</div>
+            <div data-active="true" class="checkboxButton">Italic</div>
+            <div class="checkboxButton">Underlined</div>
+          </div>
+        </div>
+        Icon
+        <div class="colorControls">
+          Background: <input type="color" value="#ff0000">Text: <input type="color" value="#ff0000">
+          <div class="textControls">
+            <div class="checkboxButton">Bold</div>
+            <div data-active="true" class="checkboxButton">Italic</div>
+            <div data-active="true" class="checkboxButton">Underlined</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" data-view="styles">
+      <div class="preview">
+        <img src="./gutenberg.png" />
+      </div>
+      <div>
+        <div class="styles">
+          <div class="style">
+            <img src="./landing.svg" />
+            <div>
+              Landing
+            </div>
+          </div>
+          <div class="style">
+            <img src="./profile.svg" />
+            <div>
+              Profile
+            </div>
+          </div>
+          <div class="style">
+            <img src="./background-full.svg" />
+            <div>
+              Wallpaper
+            </div>
+          </div>
+          <div class="style">
+            <img src="./background-top-left.svg" />
+            <div>
+              Top left
+            </div>
+          </div>
+          <div class="style">
+            <img src="./background-top-right.svg" />
+            <div>
+              Top right
+            </div>
+          </div>
+          <div class="style">
+            <img src="./background-bottom-left.svg" />
+            <div>
+              Bottom left
+            </div>
+          </div>
+          <div class="style">
+            <img src="./background-bottom-right.svg" />
+            <div>
+              Bottom right
+            </div>
+          </div>
+          <div class="style">
+            <img src="./background-center.svg" />
+            <div>
+              Center
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <//div>
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelector('[data-view="properties"]').style.display = 'flex';
+    });
+    function showTab (e) {
+      const tabName = e.currentTarget.dataset.name;
+      document.querySelectorAll('[data-view]').forEach((elem) => {
+        elem.style.display = (elem.dataset.view === tabName ? 'flex' : 'none');
+      })
+      document.querySelectorAll('.tab').forEach((elem) => {
+        elem.dataset.active = elem.dataset.name === tabName;
+      })
+    }
+  </script>
+<body>
+</html>
