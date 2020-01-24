@@ -64,7 +64,8 @@
           <div>New Group:</div><div><input type="text" value="wheel" /></div>
           <div>Old Group:</div><div>wheel</div>
 
-          <div>Quick:</div><div>
+          <div>Quick:</div>
+          <div>
             <select>
               <option>r-- --- ---</option>
               <option>rw- --- ---</option>
@@ -87,15 +88,21 @@
             <span><input type="checkbox" />Write</span>
             <span><input type="checkbox" />Execute</span>
           </div>
-          <div>Group:</div><div>
+          <div>Group:</div>
+          <div>
             <span><input type="checkbox" />Read</span>
             <span><input type="checkbox" />Write</span>
             <span><input type="checkbox" />Execute</span>
           </div>
-          <div>Other:</div><div>
+          <div>Other:</div>
+          <div>
             <span><input type="checkbox" />Read</span>
             <span><input type="checkbox" />Write</span>
             <span><input type="checkbox" />Execute</span>
+          </div>
+          <span>&nbsp;</span>
+          <div>
+            <button type="button">Apply</button>
           </div>
         </div>
       </div>
@@ -139,32 +146,40 @@
         <img src="./gutenberg.png" />
       </div>
       <div class="colorControlsContainer">
-        Tree
+        <div class="colorControlsHeader">Tree: <br /><span style="color: #FF8552">Changelog.txt</span></div>
         <div class="colorControls">
-          Background: <input type="color" value="#ff0000">Text: <input type="color" value="#ff0000">
           <div class="textControls">
             <div data-active="true" class="checkboxButton">Bold</div>
             <div class="checkboxButton">Italic</div>
             <div data-active="true" class="checkboxButton">Underlined</div>
           </div>
+          <div class="colorPickerContainer">
+            <div class="colorPickerFg" style="color: #FF8552">Text <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg></div>
+          </div>
         </div>
-        Button Navigation
+        <div class="colorControlsHeader">Button Navigation: <br /><span style="clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 45%, calc(100% - 10px) 100%, 0 100%, 10px 45%); padding: 3px 10px 2px 12px; background-color: #C7F2A7; color: #247BA0">Changelog.txt</span></div>
         <div class="colorControls">
-          Background: <input type="color" value="#ff0000">Text: <input type="color" value="#ff0000">
           <div class="textControls">
             <div class="checkboxButton">Bold</div>
             <div data-active="true" class="checkboxButton">Italic</div>
             <div class="checkboxButton">Underlined</div>
           </div>
+          <div class="colorPickerContainer">
+            <div class="colorPickerFg" style="color: #247BA0">Text <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg></div>
+            <div class="colorPickerBg" style="background: #C7F2A7"><div>Background <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 0v2h-8v-2h8zm0 24v-2h-8v2h8zm2-22h4v4h2v-6h-6v2zm-18 14h2v-8h-2v8zm2-10v-4h4v-2h-6v6h2zm22 2h-2v8h2v-8zm-2 10v4h-4v2h6v-6h-2zm-16 4h-4v-4h-2v6h6v-2z"/></svg></div></div>
+          </div>
         </div>
-        Icon
+        <div class="colorControlsHeader">Icon: <br /><span style="color: #FDB833">Changelog.txt</span></div>
         <div class="colorControls">
-          Background: <input type="color" value="#ff0000">Text: <input type="color" value="#ff0000">
           <div class="textControls">
             <div class="checkboxButton">Bold</div>
             <div data-active="true" class="checkboxButton">Italic</div>
             <div data-active="true" class="checkboxButton">Underlined</div>
           </div>
+          <div class="colorPickerContainer">
+            <div class="colorPickerFg" style="color: #FDB833">Text <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg></div>
+          </div>
+
         </div>
       </div>
     </div>

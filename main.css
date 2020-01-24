@@ -28,6 +28,7 @@ body {
 
 .title {
   flex-grow: 1;
+  font-weight: bold;
 }
 
 .close-button {
@@ -49,7 +50,7 @@ body {
  */
 
  .tabBar {
-
+  user-select: none;
 }
 
 .tab {
@@ -77,6 +78,7 @@ body {
   display: none;
   flex-grow: 1;
   overflow: auto;
+  border-radius: 0 0 3px 4px;
 }
 
 .preview {
@@ -86,12 +88,12 @@ body {
   flex-grow: 0;
   padding: 5px;
   min-width: 170px;
+  border-radius: 0 0 0 4px;
 }
 
 .preview img {
   max-height: 140px;
   max-width: 140px;
-  margin: 10px 15px 5px 10px;
 }
 
 /*
@@ -147,6 +149,16 @@ input[type="color"] {
 
 .colorControls {
   display: flex;
+  margin-bottom: 15px;
+}
+
+.colorControlsHeader {
+  margin-bottom: 5px;
+}
+
+.colorControlsHeader span {
+  margin: 7px;
+  display: inline-block;
 }
 
 .colorControlsContainer {
@@ -166,22 +178,57 @@ input[type="color"] {
   border-radius: 0 4px 4px 0;
 }
 
+.colorPickerContainer {
+  border-radius: 3px;
+  display: flex;
+  margin: 0 15px;
+  cursor: default;
+}
+
+.colorPickerContainer > div {
+  padding: 4px 7px;
+  display: flex;
+}
+
+.colorPickerContainer svg {
+  fill: currentColor;
+  display: inline-block;
+  width: 0.8rem;
+  margin-left: 5px;
+  align-self: center;
+}
+
+.colorPickerContainer > div:first-of-type {
+  border-radius: 3px 0 0 3px;
+}
+
+.colorPickerContainer > div:last-of-type {
+  border-radius: 0 3px 3px 0;
+}
+
+.colorPickerBg > div{
+  mix-blend-mode: difference;
+}
+
 /*
  *
  * DARK THEME
  *
  */
 
-.dark.fileProperties {
-  background: #333;
+.dark .content {
+  background: #343434;
+  border-top: 0.5px solid #333;
   color: #CCC;
 }
 .dark .header {
-  background: #777;
-  border-bottom: 0.5px solid #555;
+  background: #444;
+  border-bottom: 0.5px solid #333;
+  color: #CCC;
 }
 .dark .tabBar {
-  background: #6D6D6D;
+  background: #444;
+  color: #CCC;
 }
 .dark path {
   fill: currentColor;
@@ -201,21 +248,32 @@ input[type="color"] {
   filter: brightness(90%);
 }
 .dark .preview {
-  background: #222;
+  background: #222 url('./simple-checker.gif');
 }
 .dark .tab[data-active="true"] {
-  background: #333;
+  background: #343434;
+  border-radius: 3px 3px 0 0 ;
 }
 .dark .style img {
   background: rgb(217, 229, 240);
   background: rgb(166, 189, 219);
 }
-.checkboxButton {
+.dark .checkboxButton {
   background: #444;
   padding: 4px;
   border-top: 1px solid #555;
 }
-.checkboxButton[data-active="true"] {
+.dark .checkboxButton:hover {
+  filter: brightness(90%);
+}
+
+.dark .checkboxButton[data-active="true"] {
   border-top: 1px solid #1D1D1D;
   background: #222;
+}
+.dark .colorPickerContainer {
+  background: #444;
+}
+.dark .colorPickerContainer > div:hover {
+  filter: brightness(90%);
 }
