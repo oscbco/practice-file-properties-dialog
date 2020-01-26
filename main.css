@@ -157,7 +157,7 @@ input[type="color"] {
 }
 
 .colorControlsHeader span {
-  margin: 7px;
+  margin: 4px 7px;
   display: inline-block;
 }
 
@@ -266,13 +266,18 @@ input[type="color"] {
 .dark .checkboxButton:hover {
   filter: brightness(90%);
 }
-
 .dark .checkboxButton[data-active="true"] {
   border-top: 1px solid #1D1D1D;
   background: #222;
 }
 .dark .colorPickerContainer {
   background: #444;
+}
+.dark .colorPickerFg {
+  border-top: 1px solid #555;
+}
+.dark .colorPickerBg {
+  border-top: 1px solid rgba(255,255,255,0.5);
 }
 .dark .colorPickerContainer > div:hover {
   filter: brightness(90%);
